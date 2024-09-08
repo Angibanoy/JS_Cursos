@@ -31,7 +31,31 @@
         document.write('<br>');
 
         //Poner en Mayusculas
-        document.write('Primeras cuatro letras: ', palabra.slice(0,4));
+        document.write('En mayusculas: ', palabra.toUpperCase());
+        document.write('<br>');
+
+        //Poner en Minúsculas
+        document.write('En minúsculas: ', palabra.toLowerCase());
+        document.write('<br>');
+
+        //Unir Texto
+        let palabra2='Curso de ';
+        document.write('Unir palabras: ', palabra2.concat(palabra));
+        document.write('<br>');
+
+        //Acortar espacios entre textos
+        let palabra3='       Hola       ';
+        document.write(palabra3);
+        document.write('<br>');
+        document.write(palabra3.trimStart());//Se borran los espacios de la izquierda de la palabra
+        document.write('<br>');
+        document.write(palabra3.trimEnd());//Se borran los espacios que están a la derecha
+        document.write('<br>');
+        document.write(palabra3.trim());//Se borran todos los espacios alrededor de la palabra
+        document.write('<br>');
+
+        //Cortar Cantidad de caracteres
+        document.write(palabra.split('Script'));//Debe estar escrito exactamente igual
         document.write('<br>');
     </script>
 </body>
